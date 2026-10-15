@@ -42,4 +42,4 @@ COPY --from=build --chown=node:node /workspace/LICENSE /licenses/discord-mcp/LIC
 USER node
 
 ENTRYPOINT ["node", "dist/cli.js"]
-CMD ["catalog"]
+CMD ["serve", "--http"]
